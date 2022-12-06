@@ -121,3 +121,10 @@ function Person() {
   }
 var p = new Person();
   
+
+
+function sumar(a,b, ...c){
+    let resultado = a+b;
+    c.forEach((n) => resultado += n);
+    return resultado;
+} //console.log(sumar(1,2,3,4))
