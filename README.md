@@ -4,7 +4,7 @@
 
 - Lenguaje de Alto Nivel.
 - Interpretado.
-- Dinámico.
+- Dinámico
 - Débilmente Tipado.
 - Multi paradigma
 - Sensible a MAYÚSCULAS y minúsculas.
