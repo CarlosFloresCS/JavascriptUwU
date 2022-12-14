@@ -4,6 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DOM Introduccion</title>
+    <style>
+    :root {
+      --yellow-color: #F7DF1E;
+      --dark-color: #222;
+    }
+
+    .cards {
+      border: thin solid var(--dark-color);
+      padding: 1rem;
+    }
+
+    .card {
+      display: inline-block;
+      background-color: var(--dark-color);
+      color: var(--yellow-color);
+    }
+
+    .card figcaption {
+      padding: 1rem;
+    }
+
+    .rotate-45 {
+      transform: rotate(45deg);
+    }
+
+    .rotate-135 {
+      transform: rotate(135deg);
+    }
+
+    .opacity-80 {
+      opacity: .8;
+    }
+
+    .sepia {
+      filter: sepia(1);
+    }
+    </style>
   </head></p>
   <body>
     <h1>Manejo del DOM</h1>
@@ -18,7 +55,7 @@
       <li><a href="#">Seccion 5</a></li>
     </nav>
     <input type="text" name="nombre" placeholder="Nombre">
-    <a href="dom.html" class="link-dom" data-id="1" data-description="Document Object Model">DOM</a>
+    <a href="dom.html" class="link-dom" data-id="1" data-description="Document Object Model" style="background-color:#F7DF1E; color: #222">DOM</a>
     <section class="cards">
       <figure class="card">
         <img src="https://placeimg.com/200/200/tech" alt="Tech">
@@ -41,6 +78,19 @@
         <figcaption>Nature</figcaption>
       </figure>
     </section>
-    <script src="dom.js"></script>
+    <template id="template-card">
+      <figure class="card">
+        <img>
+        <figcaption></figcaption>
+      </figure>
+    </template>
+    <!--<script src="elementos_atributos.js"></script>-->
+    <!--<script src="style_varCSS.js"></script>-->
+    <!--<script src="text_HTML.js"></script>-->
+    <!--<script src="traversing.js"></script>-->
+    <!--<script src="createElement.js"></script>-->
+    <!--<script src="templatesHTML.js"></script>-->
+    <!--<script src="modElementOld.js"></script>-->
+    <script src="modElementCool.js"></script>
   </body>
 </html>
