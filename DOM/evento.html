@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Evento</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .eventos-flujo div {
+      padding: 4rem;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .uno {
+      background-color: yellow;
+    }
+    .dos {
+      background-color: gold;
+    }
+    .tres {
+      background-color: lightyellow;
+    }
+    </style>
+  </head>
+  <body>
+  <h1>Eventos en Javascript</h1>
+  <h2>Manejadores de Eventos</h2>
+  <button onclick="holaMundo()">Evento con atributo HTML</button>
+  <br><br>
+  <button id="evento-semantico">Evento con manejador semántico</button>
+  <br><br>
+  <button id="evento-multiple">Evento con manejador múltiple</button>
+  <br><br>
+  <button id="evento-remover">Removiendo eventos con manejadores múltiples</button>
+  <script src="manejadorEvent.js"></script>
+  <br><br>
+  <h2>Flujo de eventos</h2>
+  <section class="eventos-flujo">
+    <div class="uno">
+      1
+      <div class="dos">
+        2
+        <div class="tres">
+          3
+          <a href="https://jonmircha.com/" target="_blank" rel="noopener">JonMircha</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--<script src="flujoEvent.js"></script>-->
+  <script src="delegacionEvent.js"></script>
+  </body>
+</html>
